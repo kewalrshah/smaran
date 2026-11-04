@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kewalrshah.github.io/smaran/sitemap.xml
