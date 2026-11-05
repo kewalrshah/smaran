@@ -1,22 +1,13 @@
 /* Layout: a navy hero with phones rising out of it, a tight two-column grid of tinted panels
    (each with a screenshot cropped at its bottom edge), a navy closing band, a slim footer. */
 :root{
+  /* one deep-navy world from top to bottom, so the hero flows into the page and light screenshots stand out */
   --navy:#04203F;--navy-deep:#021629;--navy-soft:#0C2D52;--line-navy:#1F4570;
-  --paper:#FAF8F3;--sand:#F1EDE3;--sand-2:#E9E2D2;--card:#FFFFFF;--border:#E2DCCE;
-  --h1:#04203F;--ink:#2A3442;--muted:#5F6B7C;--gold:#B58A3C;--gold-hi:#D6AB5C;--cream:#FAF8F3;--link:#1F5F9E;
-  --frame:#0B2240;
+  --paper:#021629;--sand:#0A2747;--sand-2:#0F3157;--card:#0C2D52;--border:#1A3B63;
+  --h1:#FAF8F3;--ink:#D3DAE5;--muted:#93A4BC;--gold:#D6AB5C;--gold-hi:#D6AB5C;--cream:#FAF8F3;--link:#9CC3EE;
   --display:"Playfair Display","Iowan Old Style",Georgia,serif;
   --body:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
   --deva:"Noto Serif Devanagari","Kohinoor Devanagari",serif;
-}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --paper:#021629;--sand:#0C2D52;--sand-2:#133964;--card:#0C2D52;--border:#1F4570;
-  --h1:#FAF8F3;--ink:#D3DAE5;--muted:#93A4BC;--gold:#D6AB5C;--link:#7FB1E8;--frame:#000E1C;
-  color-scheme:dark;
-}}
-:root[data-theme="dark"]{
-  --paper:#021629;--sand:#0C2D52;--sand-2:#133964;--card:#0C2D52;--border:#1F4570;
-  --h1:#FAF8F3;--ink:#D3DAE5;--muted:#93A4BC;--gold:#D6AB5C;--link:#7FB1E8;--frame:#000E1C;
   color-scheme:dark;
 }
 *{box-sizing:border-box}
@@ -29,9 +20,10 @@ p{margin:0}
 .wrap{max-width:1120px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
 
 /* screenshots: no device frame, rounded like the iPhone screen, lifted with a shadow or a glow */
-.phone{border-radius:12.5%/5.75%;overflow:hidden;background:var(--card);box-shadow:0 0 0 1px rgba(4,32,63,.08),0 24px 50px -18px rgba(4,32,63,.35)}
+.phone{border-radius:12.5%/5.75%;overflow:hidden;background:var(--card);box-shadow:0 0 0 1px rgba(250,248,243,.14),0 0 44px 2px rgba(214,171,92,.22),0 0 110px 8px rgba(127,177,232,.12)}
 .phone img{display:block;width:100%;height:auto}
-.hero .phone,.panel.navy .phone{box-shadow:0 0 0 1px rgba(250,248,243,.16),0 0 48px 4px rgba(214,171,92,.28),0 0 120px 10px rgba(127,177,232,.16)}
+.hero .phone{box-shadow:0 0 0 1px rgba(250,248,243,.16),0 0 48px 4px rgba(214,171,92,.28),0 0 120px 10px rgba(127,177,232,.16)}
+.hero-phones{-webkit-mask-image:linear-gradient(#000 62%,transparent);mask-image:linear-gradient(#000 62%,transparent)}
 .hero-phones .phone{border-bottom-left-radius:0;border-bottom-right-radius:0}
 
 /* hero */
@@ -63,7 +55,7 @@ p{margin:0}
 .intro h2{font-family:var(--display);font-style:italic;font-weight:500;font-size:clamp(34px,4.6vw,48px);color:var(--h1)}
 .intro p{color:var(--muted);margin-top:10px;font-size:18px}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.panel{background:var(--sand);border-radius:28px;padding:36px 36px 0;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.panel{background:linear-gradient(180deg,var(--sand-2),var(--sand));box-shadow:inset 0 0 0 1px var(--border);border-radius:28px;padding:36px 36px 0;overflow:hidden;display:flex;flex-direction:column;min-width:0}
 .panel h3{font-size:24px;font-weight:650;color:var(--h1);letter-spacing:-.01em}
 .panel p{color:var(--muted);margin-top:8px;max-width:420px;font-size:16.5px}
 .panel .shot{margin-top:28px;display:flex;justify-content:center;gap:16px;margin-bottom:-38%}
@@ -73,7 +65,7 @@ p{margin:0}
 .panel.wide .shot{flex:1.2 1 0;margin:0;align-self:flex-end;margin-bottom:-14%}
 .panel.wide .shot .phone{width:46%}
 .panel.wide .shot .phone + .phone{margin-top:40px}
-.panel.navy{background:linear-gradient(160deg,#0E3460,var(--navy) 60%);color:var(--cream)}
+.panel.navy{background:radial-gradient(90% 120% at 85% 10%,rgba(214,171,92,.16),transparent 60%),linear-gradient(160deg,#123B6B,var(--navy) 65%);color:var(--cream)}
 .panel.navy h3{color:var(--cream)}
 .panel.navy p{color:#B7C3D4}
 .tag{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
@@ -93,14 +85,14 @@ p{margin:0}
 @media (max-width:480px){.list{grid-template-columns:1fr}}
 
 /* closing band */
-.closing{margin-top:40px;background:var(--navy);color:var(--cream);text-align:center;padding-block:72px}
+.closing{margin-top:40px;background:radial-gradient(70% 90% at 50% 100%,#0E3460,transparent 70%);color:var(--cream);text-align:center;padding-block:72px}
 .closing blockquote{font-family:var(--display);font-style:italic;font-size:clamp(24px,3.4vw,38px);line-height:1.35;margin:0 auto;max-width:900px;color:var(--cream)}
 .closing .name{max-width:900px;margin:28px auto 0;color:#B7C3D4;font-size:17px}
 .closing .name b{color:var(--gold-hi);font-weight:600}
 .closing .cta{margin-top:32px}
 
 /* sub pages */
-.subhead{background:var(--navy);color:var(--cream);padding-block:28px 40px}
+.subhead{background:radial-gradient(120% 140% at 30% 0%,#0E3460,var(--navy-deep) 70%);color:var(--cream);padding-block:28px 40px}
 .subhead .wrap{max-width:800px}
 .back{display:inline-flex;align-items:center;gap:10px;color:#C9D3E1;font-size:15px}
 .back img{width:28px;height:28px;border-radius:7px}
@@ -118,7 +110,7 @@ p{margin:0}
 footer{padding-block:28px 40px;font-size:14px;color:var(--muted)}
 footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between;align-items:center}
 footer nav{display:flex;gap:22px}footer a{color:var(--muted)}
-.dark-foot{background:var(--navy);color:#93A4BC;border-top:1px solid var(--line-navy)}
+.dark-foot{color:#93A4BC;border-top:1px solid var(--border)}
 .dark-foot a{color:#B7C3D4}
 @media (prefers-reduced-motion:no-preference){
   .hero-phones .phone{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
@@ -133,3 +125,4 @@ footer nav{display:flex;gap:22px}footer a{color:var(--muted)}
 @media (max-width:860px){.panel.wide .shot.tall{height:440px;margin-top:28px}.panel.wide .shot.tall .phone{width:78%}}
 @media (max-width:640px){.closing .name br{display:none}}
 @media (max-width:860px){.panel.wide .shot.tall{flex:none}}
+.card{box-shadow:inset 0 0 0 1px var(--border)}
