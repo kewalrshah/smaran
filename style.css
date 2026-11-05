@@ -1,10 +1,10 @@
 /* Layout: a navy hero with phones rising out of it, a tight two-column grid of tinted panels
    (each with a screenshot cropped at its bottom edge), a navy closing band, a slim footer. */
 :root{
-  /* one deep-navy world from top to bottom, so the hero flows into the page and light screenshots stand out */
+  /* the app's dark-mode colours (paper #04203F, card #0C2D52, border #1F4570) from top to bottom; one deep-navy world from top to bottom, so the hero flows into the page and light screenshots stand out */
   --navy:#04203F;--navy-deep:#021629;--navy-soft:#0C2D52;--line-navy:#1F4570;
-  --paper:#021629;--sand:#0A2747;--sand-2:#0F3157;--card:#0C2D52;--border:#1A3B63;
-  --h1:#FAF8F3;--ink:#D3DAE5;--muted:#93A4BC;--gold:#D6AB5C;--gold-hi:#D6AB5C;--cream:#FAF8F3;--link:#9CC3EE;
+  --paper:#04203F;--sand:#0C2D52;--sand-2:#0C2D52;--card:#0C2D52;--border:#1F4570;
+  --h1:#FAF8F3;--ink:#D3DAE5;--muted:#8497B1;--gold:#D6AB5C;--gold-hi:#D6AB5C;--cream:#FAF8F3;--link:#7FB1E8;
   --display:"Playfair Display","Iowan Old Style",Georgia,serif;
   --body:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
   --deva:"Noto Serif Devanagari","Kohinoor Devanagari",serif;
@@ -23,11 +23,9 @@ p{margin:0}
 .phone{border-radius:12.5%/5.75%;overflow:hidden;background:var(--card);box-shadow:0 0 0 1px rgba(250,248,243,.14),0 0 44px 2px rgba(214,171,92,.22),0 0 110px 8px rgba(127,177,232,.12)}
 .phone img{display:block;width:100%;height:auto}
 .hero .phone{box-shadow:0 0 0 1px rgba(250,248,243,.16),0 0 48px 4px rgba(214,171,92,.28),0 0 120px 10px rgba(127,177,232,.16)}
-.hero-phones{-webkit-mask-image:linear-gradient(#000 62%,transparent);mask-image:linear-gradient(#000 62%,transparent)}
-.hero-phones .phone{border-bottom-left-radius:0;border-bottom-right-radius:0}
 
 /* hero */
-.hero{background:radial-gradient(120% 70% at 50% 0%,#0E3460 0%,var(--navy) 45%,var(--navy-deep) 100%);color:var(--cream);text-align:center;padding-block:64px 0;overflow:hidden}
+.hero{background:radial-gradient(120% 70% at 50% 0%,#0E3460 0%,var(--paper) 60%);color:var(--cream);text-align:center;padding-block:64px 0;overflow-x:clip}
 .hero .icon{width:84px;height:84px;border-radius:19px;box-shadow:0 0 0 1px rgba(250,248,243,.12),0 12px 30px rgba(0,0,0,.35)}
 .hero h1{font-family:var(--display);font-style:italic;font-weight:500;font-size:clamp(56px,9vw,96px);color:var(--cream);letter-spacing:-.01em;margin-top:22px}
 .hero .deva{font-family:var(--deva);color:var(--gold-hi);font-size:22px;margin-top:2px}
@@ -39,12 +37,12 @@ p{margin:0}
 .store:hover{text-decoration:none}
 .store.soon{cursor:default}
 .cta .meta{font-size:14px;color:#93A4BC}
-.hero-phones{display:flex;justify-content:center;align-items:flex-start;gap:clamp(14px,3vw,36px);margin-top:52px;height:clamp(300px,42vw,470px);padding-inline:10px}
-.hero-phones .phone{width:min(27vw,290px)}
+.hero-phones{display:flex;justify-content:center;align-items:flex-start;gap:clamp(14px,3vw,36px);margin-top:52px;padding-inline:10px;padding-bottom:16px}
+.hero-phones .phone{width:min(25vw,270px)}
 .hero-phones .phone.side{margin-top:56px}
 @media (max-width:640px){
   .hero{padding-block:48px 0}
-  .hero-phones{height:84vw;margin-top:40px}
+  .hero-phones{margin-top:40px}
   .hero-phones .phone{width:46vw}
   .hero-phones .phone.side{width:36vw;margin-top:40px}
 }
@@ -65,7 +63,7 @@ p{margin:0}
 .panel.wide .shot{flex:1.2 1 0;margin:0;align-self:flex-end;margin-bottom:-14%}
 .panel.wide .shot .phone{width:46%}
 .panel.wide .shot .phone + .phone{margin-top:40px}
-.panel.navy{background:radial-gradient(90% 120% at 85% 10%,rgba(214,171,92,.16),transparent 60%),linear-gradient(160deg,#123B6B,var(--navy) 65%);color:var(--cream)}
+.panel.navy{background:radial-gradient(90% 120% at 85% 10%,rgba(214,171,92,.14),transparent 60%),linear-gradient(160deg,#133964,var(--sand) 65%);color:var(--cream)}
 .panel.navy h3{color:var(--cream)}
 .panel.navy p{color:#B7C3D4}
 .tag{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
@@ -92,7 +90,7 @@ p{margin:0}
 .closing .cta{margin-top:32px}
 
 /* sub pages */
-.subhead{background:radial-gradient(120% 140% at 30% 0%,#0E3460,var(--navy-deep) 70%);color:var(--cream);padding-block:28px 40px}
+.subhead{background:radial-gradient(120% 140% at 30% 0%,#0E3460,var(--paper) 70%);color:var(--cream);padding-block:28px 40px}
 .subhead .wrap{max-width:800px}
 .back{display:inline-flex;align-items:center;gap:10px;color:#C9D3E1;font-size:15px}
 .back img{width:28px;height:28px;border-radius:7px}
