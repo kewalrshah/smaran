@@ -167,3 +167,7 @@ footer nav{display:flex;gap:22px}footer a{color:var(--muted)}
   footer .wrap{justify-content:center;text-align:center}
 }
 @media (max-width:640px){.hero .lede{text-wrap:balance}.panel.wide .shot .phone{width:47%}}
+/* pre-launch: a quiet badge, not a button (swap for .store at launch) */
+.soon-badge{display:inline-flex;align-items:center;gap:10px;padding:9px 18px;border:1px solid rgba(214,171,92,.55);border-radius:999px;background:rgba(214,171,92,.08);color:var(--cream);font-size:15px;font-weight:500;letter-spacing:.01em}
+.soon-badge i{width:7px;height:7px;border-radius:50%;background:var(--gold-hi);box-shadow:0 0 0 4px rgba(214,171,92,.18)}
+@media (max-width:640px){.soon-badge{font-size:14px;padding:8px 16px}}
