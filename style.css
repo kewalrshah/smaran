@@ -127,3 +127,9 @@ footer nav{display:flex;gap:22px}footer a{color:var(--muted)}
 }
 @media (min-width:861px){.intro p{white-space:nowrap}}
 @media (max-width:640px){.closing blockquote br{display:none}}
+.panel.wide .shot.tall{align-self:stretch;margin:0;height:500px;align-items:flex-start;padding-top:8px}
+.panel.wide .shot.tall .phone{width:min(72%,340px)}
+.panel.navy{padding-bottom:0}
+@media (max-width:860px){.panel.wide .shot.tall{height:440px;margin-top:28px}.panel.wide .shot.tall .phone{width:78%}}
+@media (max-width:640px){.closing .name br{display:none}}
+@media (max-width:860px){.panel.wide .shot.tall{flex:none}}
