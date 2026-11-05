@@ -131,3 +131,9 @@ footer nav{display:flex;gap:22px}footer a{color:var(--muted)}
 .list .ico{flex:none;width:22px;height:22px;margin-top:2px;fill:none;stroke:var(--muted);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 .list .ico .g{fill:var(--muted);stroke:none}
 .list li span{white-space:nowrap}
+/* support: icons instead of bullets */
+.card ul.qa{list-style:none;padding:0;margin:14px 0 0}
+.card .qa li{display:flex;gap:12px;align-items:flex-start;margin:12px 0}
+.card .qa .ico{flex:none;width:22px;height:22px;margin-top:2px;fill:none;stroke:var(--muted);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.card .qa .ico .g{fill:var(--muted);stroke:none}
+.card .qa strong{color:var(--h1)}
