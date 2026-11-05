@@ -127,3 +127,5 @@ footer nav{display:flex;gap:22px}footer a{color:var(--muted)}
 .hero-phones .phone{border-bottom-left-radius:0;border-bottom-right-radius:0}
 /* stronger edges so the cream cards and the screenshots on them never melt into each other or into the page */
 .panel{border:3px solid #E2DCCE}
+.list li{display:flex;gap:12px;align-items:flex-start}
+.list .ico{flex:none;width:22px;height:22px;margin-top:2px;fill:none;stroke:var(--muted);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
