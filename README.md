@@ -1,6 +1,6 @@
 # Smaran website
 
-The info, support and privacy pages for Smaran, an iPhone app for reading and reciting the Bhagavad Gita, stotras, Vedic mantras and Upanishads.
+The info, support and privacy pages for Smaran, an iPhone app for reading and reciting the Bhagavad Gita, Stotras, Vedic mantras and Upanishads.
 
 Live at https://kewalrshah.github.io/smaran/
 
