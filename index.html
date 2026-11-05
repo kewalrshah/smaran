@@ -7,8 +7,7 @@
 <meta name="description" content="Smaran is a calm iPhone app for reading and reciting the Bhagavad Gita, stotras, Vedic mantras and Upanishads in Devanagari or English transliteration, with meanings, bookmarks and offline reading.">
 <meta name="keywords" content="Smaran, Bhagavad Gita app, stotra, shloka, shlok, Sanskrit, Devanagari, mantra, Upanishad, recitation, transliteration">
 <link rel="canonical" href="https://kewalrshah.github.io/smaran/">
-<meta name="theme-color" content="#FAF8F3" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#04203F" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#04203F">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Smaran">
 <meta property="og:title" content="Smaran: sacred texts for daily reading">
@@ -22,22 +21,17 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&family=Noto+Serif+Devanagari:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&family=Noto+Serif+Devanagari:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"MobileApplication","name":"Smaran","alternateName":"स्मरण","operatingSystem":"iOS 17 or later","applicationCategory":"BookApplication","inLanguage":["en","hi","sa"],"description":"A growing library of Vedic shlokas, mantras, hymns, prayers and the works of great saints, for reading and recitation on iPhone.","url":"https://kewalrshah.github.io/smaran/","image":"https://kewalrshah.github.io/smaran/images/icon.png"}
 </script>
 </head>
 <body>
-<div class="wrap">
-  <header class="top">
-    <a class="brand" href="./"><img src="favicon.png" alt="">Smaran</a>
-    <nav><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav>
-  </header>
-
-  <main>
-    <div class="hero">
-      <img class="icon" src="images/icon.png" width="112" height="112" alt="Smaran app icon, a swan">
+<main>
+  <header class="hero">
+    <div class="wrap">
+      <img class="icon" src="images/icon-dark.png" width="84" height="84" alt="Smaran app icon, a swan">
       <h1>Smaran</h1>
       <div class="deva" lang="hi">स्मरण</div>
       <p class="lede">A growing library of Vedic shlokas, mantras, hymns, prayers and the works of great saints, within reach wherever you are.</p>
@@ -48,42 +42,75 @@
         <div class="meta">For iPhone · In English and हिन्दी</div>
       </div>
     </div>
-
-    <p class="quote">There is no knowledge for seekers of comfort,<br>and no comfort for seekers of knowledge.</p>
-
-    <div class="shots">
-      <figure><img src="images/home.webp" width="640" height="1391" alt="Smaran home screen with Continue reading, Bookmarks, Bhagavad Gita, Stotra, Vedic Mantra and Upanishad" loading="lazy"><figcaption>Your library</figcaption></figure>
-      <figure><img src="images/gita.webp" width="640" height="1391" alt="Bhagavad Gita chapter list" loading="lazy"><figcaption>The Gita, chapter by chapter</figcaption></figure>
-      <figure><img src="images/reader.webp" width="640" height="1391" alt="Bhagavad Gita chapter 3 verses in Devanagari" loading="lazy"><figcaption>Devanagari or English</figcaption></figure>
-      <figure><img src="images/bookmarks.webp" width="640" height="1391" alt="Bookmarked texts and verses" loading="lazy"><figcaption>Bookmark any verse</figcaption></figure>
+    <div class="hero-phones">
+      <div class="phone side"><img src="images/home.webp" width="660" height="1434" alt="Smaran home screen listing Bhagavad Gita, Stotra, Vedic Mantra, Upanishad, Darshan Shastra and Prayer"></div>
+      <div class="phone"><img src="images/reader-deva.webp" width="660" height="1434" alt="Shiva Tandav Stotra verses in Devanagari"></div>
+      <div class="phone side"><img src="images/gita.webp" width="660" height="1434" alt="Bhagavad Gita chapter list with verse counts"></div>
     </div>
+  </header>
 
-    <section>
-      <div class="label">What's inside</div>
-      <h2>Made for quiet, daily reading</h2>
-      <div class="features">
-        <div><h3>Devanagari or English</h3><p>Read every text in Devanagari or in accented English transliteration, with English meanings where available.</p></div>
-        <div><h3>The Bhagavad Gita</h3><p>All eighteen chapters, alongside stotras, Vedic mantras and Upanishads.</p></div>
-        <div><h3>Pick up where you left off</h3><p>Continue reading opens the text and verse you were last on.</p></div>
-        <div><h3>Bookmarks</h3><p>Save a whole text or a single verse, and keep them in the order you like.</p></div>
-        <div><h3>Rotate to recite</h3><p>Turn your phone for larger verse cards and swipe from one verse to the next.</p></div>
-        <div><h3>Search</h3><p>Pull down on the home screen to find any text or verse.</p></div>
-        <div><h3>Print-ready PDFs</h3><p>Print a section or a whole text with Devanagari and transliteration.</p></div>
-        <div><h3>Works offline</h3><p>After the first download, your library is with you without a connection.</p></div>
-        <div><h3>Your way</h3><p>English or Hindi interface, adjustable text size, and light or dark appearance.</p></div>
+  <section class="features wrap">
+    <div class="intro">
+      <h2>Made for daily recitation</h2>
+      <p>The Bhagavad Gita, stotras, Vedic mantras, Upanishads and prayers, in one calm place.</p>
+    </div>
+    <div class="grid">
+      <div class="panel wide">
+        <div class="text">
+          <div class="tag">Read your way</div>
+          <h3>Devanagari or English, with meanings</h3>
+          <p>Switch any text between Devanagari and accented English transliteration. Where a meaning is available, tap Meaning under the verse to read it in English.</p>
+        </div>
+        <div class="shot">
+          <div class="phone"><img src="images/reader-eng.webp" width="660" height="1434" alt="Shiva Tandav Stotra in English transliteration" loading="lazy"></div>
+          <div class="phone"><img src="images/meaning.webp" width="660" height="1434" alt="Bhagavad Gita chapter 2 verse 47 with its English meaning open" loading="lazy"></div>
+        </div>
       </div>
-    </section>
+      <div class="panel">
+        <div class="tag">Bookmarks</div>
+        <h3>Keep the verses you return to</h3>
+        <p>Bookmark a whole text or a single verse, and arrange them in the order you like.</p>
+        <div class="shot"><div class="phone"><img src="images/bookmarks.webp" width="660" height="1434" alt="Bookmarks with Hanuman Chalisa and saved verses" loading="lazy"></div></div>
+      </div>
+      <div class="panel">
+        <div class="tag">Print</div>
+        <h3>Print-ready PDFs</h3>
+        <p>Print one section or a whole text, with Devanagari and transliteration on the page.</p>
+        <div class="shot"><div class="phone"><img src="images/pdf.webp" width="660" height="1434" alt="Printable PDF of Shiva Tandav Stotra" loading="lazy"></div></div>
+      </div>
+      <div class="panel wide navy">
+        <div class="text">
+          <div class="tag">And more</div>
+          <h3>Light or dark, wherever you read</h3>
+          <ul class="list">
+            <li><b>Continue reading</b>Opens the verse you were last on</li>
+            <li><b>Rotate to recite</b>Larger verse cards, swipe to the next</li>
+            <li><b>Search</b>Pull down on the home screen</li>
+            <li><b>Works offline</b>After the first download</li>
+            <li><b>Text size</b>Set it once for every text</li>
+            <li><b>English or Hindi</b>Choose the app's language</li>
+          </ul>
+        </div>
+        <div class="shot"><div class="phone"><img src="images/home-dark.webp" width="660" height="1434" alt="Smaran home screen in dark mode with Continue reading" loading="lazy"></div></div>
+      </div>
+    </div>
+  </section>
 
-    <section class="narrow prose">
-      <div class="label">The name</div>
-      <h2>Smaran means remembrance</h2>
-      <p>Smaran means remembrance, or meditating on the Divine. Within the path of bhakti, remembering the Divine can deepen devotion.</p>
-      <p>The library honours the saints, sages and teachers whose works it preserves, and the generations who have passed them on. May these words inspire more than recitation, awakening curiosity about their meaning, their wisdom, and the lives of those who shared them.</p>
-    </section>
-  </main>
-</div>
+  <section class="closing wrap-band">
+    <div class="wrap">
+      <blockquote>There is no knowledge for seekers of comfort,<br>and no comfort for seekers of knowledge.</blockquote>
+      <p class="name"><b>Smaran</b> means remembrance, or meditating on the Divine. The library honours the saints, sages and teachers whose works it preserves, and the generations who have passed them on.</p>
+      <div class="cta">
+        <!-- APP STORE LINK: when the app is live, replace this <span> with
+             <a class="store" href="https://apps.apple.com/app/idXXXXXXXXXX"><small>Download on the</small><span>App Store</span></a> -->
+        <span class="store soon" role="note"><small>Coming soon to the</small><span>App Store</span></span>
+        <div class="meta">For iPhone · In English and हिन्दी</div>
+      </div>
+    </div>
+  </section>
+</main>
 
-<footer>
+<footer class="dark-foot">
   <div class="wrap">
     <span>© 2026 Smaran</span>
     <nav><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="mailto:smaran@kewalshah.com">Contact</a></nav>
